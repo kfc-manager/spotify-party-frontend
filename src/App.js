@@ -3,7 +3,7 @@ import axios from "axios";
 import Queue from "./components/Queue/Queue";
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
-import Search from "./components/Search/Seach";
+import Search from "./components/Search/Search";
 
 function queueIndexing(queue) {
   for (let i = 0; i < queue.length; i++) {
@@ -20,7 +20,7 @@ export default function App() {
   axios.get("/queue/get")
   .then((response) => setQueue(queueIndexing(response.data)))
   .catch((error) => {
-      //TODO handle error
+      console.log(error);
     });
   }, []);
 

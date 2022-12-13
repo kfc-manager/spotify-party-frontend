@@ -1,0 +1,13 @@
+.searchContainer {
+    text-align: center;
+    background-color: #121212;
+}
+
+input[type=text] {
+    width: 50%;
+    background-color: #121212;
+    border-color: #121212;
+    color: #696969;
+    font: caption;
+    font-size: 300%;
+}
