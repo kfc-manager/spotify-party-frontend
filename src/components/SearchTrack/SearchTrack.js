@@ -1,4 +1,5 @@
 import "./SearchTrack.css";
+import buttonIcon from "./button.jpeg";
 import axios from "axios";
 
 function toMinutes(duration_ms) {
@@ -31,14 +32,14 @@ function addToQueue(trackID) {
 
 export default function Track({ track }) {
   return (
-    <div className="track">
+    <div className="searchTrack">
       <img className="icon" src={ track.image } alt=''/>
       <div className="container">
         <div className="name">{ track.name }</div>
         <div className="artists">{ artistString(track.artists) }</div>
       </div>
       <div className="duration">{ toMinutes(track.duration) }</div>
-      <button className="addButton" onClick={() => {addToQueue(track.id)}}>Button</button>
+      <img className="addButton" onClick={() => {addToQueue(track.id)}} src={buttonIcon} alt=""/>
     </div>
   )
 }

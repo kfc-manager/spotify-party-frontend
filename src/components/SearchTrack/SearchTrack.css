@@ -1,8 +1,8 @@
-.track {
+.searchTrack {
     background-color: #121212;
     display: grid;
-    grid-column: 4;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-column: 5;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
     font: caption;
     color: #696969;
 }
@@ -46,7 +46,9 @@
 }
 
 .addButton {
-    font: caption;
-    background-color: #121212;
-    color: #696969;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
