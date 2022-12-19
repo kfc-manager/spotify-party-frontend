@@ -1,0 +1,37 @@
+.icon {
+    height: 200px;
+    width: 200px;
+    grid-column-start: 0;
+    grid-column-end: 1;
+}
+
+.container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 300%;
+}
+
+.artists {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 250%;
+}
+
+.duration {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50%;
+    font-size: 300%;
+}
